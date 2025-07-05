@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aiasmrs.com - AI ASMR 自动生成，敬请期待</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(18, 18, 18, 0.6) 0%, rgba(18, 18, 18, 1) 70%);
+            z-index: 1;
+        }
+
+        .background-visual {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            transform: translate(-50%, -50%);
+            background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* 一个微妙的背景纹理 */
+            animation: rotate-background 120s linear infinite;
+            opacity: 0.05;
+        }
+
+        @keyframes rotate-background {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(45deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .email-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .email-input {
+            width: 60%;
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .email-input::placeholder {
+            color: #888;
+        }
+
+        .submit-button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5), 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        .social-links a {
+            color: #aaa;
+            margin: 0 15px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+            z-index: 2;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-visual"></div>
+    <div class="overlay"></div>
+
+    <div class="content">
+        <div class="logo">aiasmrs.com</div>
+        <h1>即将上线</h1>
+        <p>我们正在利用人工智能，为您打造独一无二的ASMR短视频体验。敬请期待，一场听觉盛宴即将开启。</p>
+
+        <div class="email-form">
+            <input type="email" class="email-input" placeholder="输入您的邮箱，获取上线通知">
+            <button type="submit" class="submit-button">订阅</button>
+        </div>
+
+        <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Weibo"><i class="fab fa-weibo"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 aiasmrs.com. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
